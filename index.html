@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجلة الرسمية - المؤسسة الحكومية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-section">
+                    <img src="logo.jpg" alt="شعار المؤسسة" class="logo">
+                    <div class="logo-text">
+                        <h1>هيئة قضايا الدولة </h1>
+                        <p>المؤسسة الحكومية</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ar">العربية</button>
+                        <button class="lang-btn" data-lang="en">English</button>
+                    </div>
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" id="loginBtn">تسجيل الدخول</button>
+                        <button class="btn btn-primary" id="registerBtn">إنشاء حساب</button>
+                    </div>
+                </div>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#" class="nav-link">الأخبار</a></li>
+                    <li><a href="#" class="nav-link">المقالات</a></li>
+                    <li><a href="#" class="nav-link">الفعاليات</a></li>
+                    <li><a href="#" class="nav-link">دليل الخدمات</a></li>
+                    <li><a href="#" class="nav-link">ملفات التعريف</a></li>
+                    <li><a href="#" class="nav-link">المكتبة</a></li>
+                    <li><a href="#" class="nav-link">اتصل بنا</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="ابحث في الموقع...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- السلايدر الرئيسي -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-category">أخبار هامة</span>
+                        <h2 class="slide-title">انطلاق المؤتمر السنوي للتنمية المستدامة</h2>
+                        <p class="slide-description">يناقش المؤتمر أحدث استراتيجيات التنمية المستدامة وآليات تطبيقها في القطاعات الحكومية المختلفة.</p>
+                        <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/600x400/0056b3/ffffff?text=مؤتمر+التنمية" alt="المؤتمر السنوي للتنمية المستدامة">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-category">مقالات</span>
+                        <h2 class="slide-title">تطوير الخدمات الحكومية الرقمية</h2>
+                        <p class="slide-description">كيف تساهم التحولات الرقمية في تحسين تجربة المواطنين مع الخدمات الحكومية.</p>
+                        <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/600x400/28a745/ffffff?text=الخدمات+الرقمية" alt="تطوير الخدمات الحكومية الرقمية">
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="slide-text">
+                        <span class="slide-category">فعاليات</span>
+                        <h2 class="slide-title">معرض الابتكار الحكومي 2023</h2>
+                        <p class="slide-description">يستعرض المعرض أحدث الابتكارات والتقنيات في القطاع الحكومي بمشاركة 50 جهة حكومية.</p>
+                        <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="https://via.placeholder.com/600x400/dc3545/ffffff?text=معرض+الابتكار" alt="معرض الابتكار الحكومي 2023">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-right"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-left"></i></button>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- الأقسام الرئيسية -->
+    <main class="main-content">
+        <div class="container">
+            <!-- قسم المقالات البارزة -->
+            <section class="featured-section">
+                <div class="section-header">
+                    <h2 class="section-title">المقالات البارزة</h2>
+                    <a href="#" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/350x200/0056b3/ffffff?text=مقال+1" alt="صورة المقال">
+                            <span class="article-category">تحليل</span>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">تأثير التحول الرقمي على كفاءة الجهات الحكومية</h3>
+                            <p class="article-excerpt">دراسة تحليلية لتأثير التحول الرقمي على أداء وكفاءة الجهات الحكومية خلال السنوات الخمس الماضية.</p>
+                            <div class="article-meta">
+                                <span class="article-date"><i class="far fa-calendar"></i> 15 أكتوبر 2023</span>
+                                <span class="article-views"><i class="far fa-eye"></i> 1,245</span>
+                            </div>
+                            <a href="#" class="article-link">اقرأ المزيد</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/350x200/28a745/ffffff?text=مقال+2" alt="صورة المقال">
+                            <span class="article-category">تقرير</span>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">مؤشرات الأداء الحكومي للربع الثالث 2023</h3>
+                            <p class="article-excerpt">تقرير مفصل عن مؤشرات الأداء للجهات الحكومية خلال الربع الثالث من عام 2023 ومقارنتها بالأعوام السابقة.</p>
+                            <div class="article-meta">
+                                <span class="article-date"><i class="far fa-calendar"></i> 10 أكتوبر 2023</span>
+                                <span class="article-views"><i class="far fa-eye"></i> 892</span>
+                            </div>
+                            <a href="#" class="article-link">اقرأ المزيد</a>
+                        </div>
+                    </article>
+                    
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="https://via.placeholder.com/350x200/dc3545/ffffff?text=مقال+3" alt="صورة المقال">
+                            <span class="article-category">رأي</span>
+                        </div>
+                        <div class="article-content">
+                            <h3 class="article-title">تحديات تواجه تطبيق الذكاء الاصطناعي في القطاع الحكومي</h3>
+                            <p class="article-excerpt">تحليل للتحديات التقنية والتنظيمية التي تواجه تطبيق تقنيات الذكاء الاصطناعي في القطاع الحكومي.</p>
+                            <div class="article-meta">
+                                <span class="article-date"><i class="far fa-calendar"></i> 5 أكتوبر 2023</span>
+                                <span class="article-views"><i class="far fa-eye"></i> 1,532</span>
+                            </div>
+                            <a href="#" class="article-link">اقرأ المزيد</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- قسم الفعاليات -->
+            <section class="events-section">
+                <div class="section-header">
+                    <h2 class="section-title">الفعاليات القادمة</h2>
+                    <a href="#" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="events-list">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">25</span>
+                            <span class="event-month">أكتوبر</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">ورشة عمل: إدارة المشاريع الحكومية</h3>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> قاعة المؤتمرات - المبنى الرئيسي</p>
+                            <p class="event-time"><i class="far fa-clock"></i> 9:00 ص - 2:00 م</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">التفاصيل</button>
+                            <button class="btn btn-primary">سجل الآن</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">02</span>
+                            <span class="event-month">نوفمبر</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">ندوة: مستقبل الخدمات الحكومية الرقمية</h3>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> المركز الثقافي - فرع المدينة</p>
+                            <p class="event-time"><i class="far fa-clock"></i> 10:00 ص - 1:00 م</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">التفاصيل</button>
+                            <button class="btn btn-primary">سجل الآن</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="event-day">15</span>
+                            <span class="event-month">نوفمبر</span>
+                        </div>
+                        <div class="event-details">
+                            <h3 class="event-title">معرض التوظيف الحكومي 2023</h3>
+                            <p class="event-location"><i class="fas fa-map-marker-alt"></i> مركز المعارض الدولي</p>
+                            <p class="event-time"><i class="far fa-clock"></i> 9:00 ص - 5:00 م</p>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-outline">التفاصيل</button>
+                            <button class="btn btn-primary">سجل الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم ملفات التعريف -->
+            <section class="profiles-section">
+                <div class="section-header">
+                    <h2 class="section-title">شخصيات بارزة</h2>
+                    <a href="#" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="profiles-grid">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/150x150/0056b3/ffffff?text=صورة" alt="صورة الشخص">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">د. أحمد محمد</h3>
+                            <p class="profile-title">مدير عام التخطيط الاستراتيجي</p>
+                            <p class="profile-bio">خبير في التخطيط الاستراتيجي والتحول الرقمي مع أكثر من 15 عاماً من الخبرة في القطاع الحكومي.</p>
+                            <div class="profile-contact">
+                                <a href="#" class="contact-link"><i class="far fa-envelope"></i></a>
+                                <a href="#" class="contact-link"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/150x150/28a745/ffffff?text=صورة" alt="صورة الشخص">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">أ. فاطمة عبدالله</h3>
+                            <p class="profile-title">رئيسة قسم الابتكار</p>
+                            <p class="profile-bio">متخصصة في تطوير حلول الابتكار الحكومي وإدارة المشاريع التقنية. حاصلة على عدة جوائز في التميز الحكومي.</p>
+                            <div class="profile-contact">
+                                <a href="#" class="contact-link"><i class="far fa-envelope"></i></a>
+                                <a href="#" class="contact-link"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/150x150/dc3545/ffffff?text=صورة" alt="صورة الشخص">
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">م. خالد سليمان</h3>
+                            <p class="profile-title">مستشار التقنية</p>
+                            <p class="profile-bio">خبير في البنية التحتية للتقنية وأمن المعلومات. يشرف على تطوير الأنظمة الحكومية والتحول الرقمي.</p>
+                            <div class="profile-contact">
+                                <a href="#" class="contact-link"><i class="far fa-envelope"></i></a>
+                                <a href="#" class="contact-link"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- قسم المكتبة -->
+            <section class="library-section">
+                <div class="section-header">
+                    <h2 class="section-title">المكتبة الرقمية</h2>
+                    <a href="#" class="view-all">عرض الكل <i class="fas fa-arrow-left"></i></a>
+                </div>
+                <div class="documents-grid">
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3 class="document-title">التقرير السنوي 2022</h3>
+                            <p class="document-description">تقرير مفصل عن إنجازات وأداء المؤسسة خلال عام 2022</p>
+                            <div class="document-meta">
+                                <span class="document-size">4.2 MB</span>
+                                <span class="document-date">مارس 2023</span>
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3 class="document-title">دليل الخدمات الإلكترونية</h3>
+                            <p class="document-description">دليل شامل للخدمات الإلكترونية المقدمة من المؤسسة</p>
+                            <div class="document-meta">
+                                <span class="document-size">2.8 MB</span>
+                                <span class="document-date">يناير 2023</span>
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                    </div>
+                    
+                    <div class="document-card">
+                        <div class="document-icon">
+                            <i class="far fa-file-pdf"></i>
+                        </div>
+                        <div class="document-info">
+                            <h3 class="document-title">استراتيجية التحول الرقمي 2023-2025</h3>
+                            <p class="document-description">الخطة الاستراتيجية للتحول الرقمي في المؤسسة</p>
+                            <div class="document-meta">
+                                <span class="document-size">3.5 MB</span>
+                                <span class="document-date">ديسمبر 2022</span>
+                            </div>
+                        </div>
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.jpg" alt="شعار المؤسسة" class="logo">
+                        <div class="logo-text">
+                            <h3>المجلة الرسمية</h3>
+                            <p>المؤسسة الحكومية</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">منصة إلكترونية شاملة تقدم أحدث الأخبار والمقالات والفعاليات والخدمات الحكومية.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">عن المؤسسة</a></li>
+                        <li><a href="#">الأخبار</a></li>
+                        <li><a href="#">الفعاليات</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">الخدمات</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">البوابة الإلكترونية</a></li>
+                        <li><a href="#">الخدمات الحكومية</a></li>
+                        <li><a href="#">الاستعلامات</a></li>
+                        <li><a href="#">التقارير والإحصائيات</a></li>
+                        <li><a href="#">المكتبة الرقمية</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">اتصل بنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع الحكومة، المبنى الرئيسي، المدينة</p>
+                        <p><i class="fas fa-phone"></i> الهاتف: 01123456789</p>
+                        <p><i class="far fa-envelope"></i> البريد الإلكتروني: info@example.gov</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">© 2023 المجلة الرسمية - المؤسسة الحكومية. جميع الحقوق محفوظة.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">شروط الاستخدام</a>
+                        <a href="#">إمكانية الوصول</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>تسجيل الدخول</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">البريد الإلكتروني</label>
+                        <input type="email" id="loginEmail" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">كلمة المرور</label>
+                        <input type="password" id="loginPassword" placeholder="أدخل كلمة المرور">
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            تذكرني
+                        </label>
+                        <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">تسجيل الدخول</button>
+                </form>
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+                <div class="social-auth">
+                    <button class="btn btn-outline btn-full social-btn">
+                        <i class="fab fa-google"></i>
+                        تسجيل الدخول بحساب Google
+                    </button>
+                </div>
+                <div class="auth-switch">
+                    <p>ليس لديك حساب؟ <a href="#" id="switchToRegister">إنشاء حساب</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة إنشاء حساب -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>إنشاء حساب جديد</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">الاسم الأول</label>
+                            <input type="text" id="firstName" placeholder="أدخل الاسم الأول">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">اسم العائلة</label>
+                            <input type="text" id="lastName" placeholder="أدخل اسم العائلة">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">البريد الإلكتروني</label>
+                        <input type="email" id="registerEmail" placeholder="أدخل بريدك الإلكتروني">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">كلمة المرور</label>
+                        <input type="password" id="registerPassword" placeholder="أنشئ كلمة مرور قوية">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">تأكيد كلمة المرور</label>
+                        <input type="password" id="confirmPassword" placeholder="أعد إدخال كلمة المرور">
+                    </div>
+                    <div class="form-group">
+                        <label for="userType">نوع المستخدم</label>
+                        <select id="userType">
+                            <option value="reader">قارئ</option>
+                            <option value="contributor">مساهم</option>
+                        </select>
+                    </div>
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            أوافق على <a href="#">شروط الاستخدام</a> و <a href="#">سياسة الخصوصية</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">إنشاء حساب</button>
+                </form>
+                <div class="auth-divider">
+                    <span>أو</span>
+                </div>
+                <div class="social-auth">
+                    <button class="btn btn-outline btn-full social-btn">
+                        <i class="fab fa-google"></i>
+                        إنشاء حساب بحساب Google
+                    </button>
+                </div>
+                <div class="auth-switch">
+                    <p>لديك حساب بالفعل؟ <a href="#" id="switchToLogin">تسجيل الدخول</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
